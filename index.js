@@ -88,7 +88,7 @@ function deleteTodoItem(todoIndex) {
 }
 
 function tanggalSekarang() {
-    const hari = ["Senin", "Selasa", "Rabu", "Kamis", "Jumat", "Sabtu", "Minggu"];
+    const hari = ["Minggu", "Senin", "Selasa", "Rabu", "Kamis", "Jumat", "Sabtu"];
     const bulan = ["Januari", "Februari", "Maret", "April", "Mei", "Juni", "Juli", "Agustus", "September", "Oktober", "November", "Desember"];
     let today = new Date();
     document.getElementById("tanggalSekarang").innerHTML = (hari[today.getDay()] + " " + today.getDate() + " " + bulan[today.getMonth()] + " " + today.getFullYear());
