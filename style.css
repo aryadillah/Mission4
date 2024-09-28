@@ -1,0 +1,194 @@
+html {
+  font-family: Poppins;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: linear-gradient(
+      135deg,
+      rgb(211, 245, 233),
+      rgb(174, 249, 224),
+      aquamarine
+    )
+    no-repeat;
+  height: 100vh;
+}
+.header{
+  display: flex;
+  margin-left: 24px;
+  margin-right: 24px;
+  justify-content: space-between;
+  margin-top: 24px;
+  flex-wrap: wrap;
+  row-gap: 24px;
+}
+.profil{
+  margin-top: 0;
+  font-family:sans-serif;
+}
+#nama {
+  display: flex;
+  margin-left: 24px;
+}
+#jabatan {
+  display: flex;
+  margin-left: 24px;
+}
+.form-to-do {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-top: 10vh;
+  background-color: whitesmoke;
+  max-width: 700px;
+  border-radius: 24px;
+}
+.baris1{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    border: 1px aqua solid;
+    border-radius: 12px;
+    box-sizing: border-box;
+    padding-left: 12px;
+    padding-right: 12px;
+    margin-bottom: 12px;
+}
+#input{
+    flex: 1;
+}
+.baris2{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding-left: 12px;
+    padding-right: 12px;
+    margin-bottom: 24px;
+}
+.baris2 div {
+    display: flex;
+    flex-direction: column;
+}
+#button{
+    border-radius: 12px;
+    padding-left: 8px;
+    padding-right: 8px;
+    background-color: aqua;
+    cursor: pointer;
+    border: none;
+}
+#button:hover{
+  background-color: rgb(6, 171, 171);
+}
+#prioritas{
+    border: none;
+    background-color: whitesmoke;
+    outline: none;
+    cursor: pointer;
+}
+#title{
+    margin-bottom: 24px;
+}
+input{
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+label{
+    font-size: 10px;
+    text-align: left;
+}
+.listContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#belumDone{
+    box-sizing: border-box;
+    padding: 4px;
+    border-radius: 12px;
+    width: 90%;
+    margin-bottom: 24px;
+}
+#done{
+    box-sizing: border-box;
+    padding: 4px;
+    border-radius: 12px;
+    width: 90%;
+}
+li {
+  list-style: none;
+  user-select: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  border: 2px solid rgba(1, 1, 1, 0.553);
+  margin-bottom: 12px;
+  border-radius: 12px;
+  box-sizing: border-box;
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+h3{
+  display: flex;
+  justify-content: center;
+}
+.text{
+  font-size: 16px;
+  flex-grow: 1;
+  padding-left: 4px;
+}
+.hapus{
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+.custom-checkbox{
+  border: 2px solid rgba(26, 209, 26, 0.838);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+input[type="checkbox"]:checked ~ .custom-checkbox svg{
+  fill: rgb(239, 244, 240);
+}
+input[type="checkbox"]{
+  display: none;
+}
+input[type="checkbox"]:checked ~ .custom-checkbox{
+  background-color:rgba(26, 209, 26, 0.838) ;
+}
+input[type="checkbox"]:checked ~ .text{
+  text-decoration: line-through ;
+  color: rgba(15, 14, 13, 0.589);
+}
+.todo p {
+  margin-left: 12px;
+  margin-right: 12px;
+}
+#delAll{
+  border-radius: 12px;
+  padding-left: 8px;
+  padding-right: 8px;
+  background-color: rgb(240, 60, 60);
+  cursor: pointer;
+  border: none;
+  font-size: 16px;
+  color: azure;
+  margin-bottom: 12px;
+}
+#delAll:hover{
+background-color: rgba(87, 9, 9, 0.932);
+}
